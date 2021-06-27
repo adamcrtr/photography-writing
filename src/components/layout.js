@@ -25,7 +25,7 @@ const Layout = ({ pageTitle, children }) => {
   return (
 
 
-    
+    <>
     <header className="bg-dark">
     <Container>
       <Navbar expand="md" variant="dark">
@@ -42,19 +42,13 @@ const Layout = ({ pageTitle, children }) => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      
+    </Container>
     
-    </Container>
-    <Container>
-      {children}
-    </Container>
   
   </header>
- 
- 
- 
- 
-
-
+    {children}
+  </>
   )
   
   }
