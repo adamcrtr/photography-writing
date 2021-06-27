@@ -15,8 +15,9 @@ import { Button,
   Navbar,
   NavDropdown,
   Form,
-  FormControl
-  
+  FormControl,
+  Row,
+  Col
 
 
 } from 'react-bootstrap';
@@ -47,7 +48,10 @@ const Layout = ({ pageTitle, children }) => {
     
   
   </header>
+  <Container>
     {children}
+  </Container>
+  
   </>
   )
   
