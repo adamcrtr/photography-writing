@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   container,
   heading,
@@ -7,29 +8,54 @@ import {
   navLinkItem,
   navLinkText
 } from './layout.module.css'
+import { Button,
+  Container,
+  Nav,
+  Card,
+  Navbar,
+  NavDropdown,
+  Form,
+  FormControl
+  
+
+
+} from 'react-bootstrap';
 
 const Layout = ({ pageTitle, children }) => {
   return (
-    <main className={container}>
-      <title>{pageTitle}</title>
-      <nav>
-        <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
-              Home
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
-              About
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <h1 className={heading}>{pageTitle}</h1>
-      {children}
-    </main>
-  )
-}
 
+
+    
+    <header className="bg-dark">
+    <Container>
+      <Navbar expand="md" variant="dark">
+        <Navbar.Brand href="/">{pageTitle}</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarResponsive" />
+        <Navbar.Collapse id="navbarResponsive">
+          <Nav as="ul" className="ml-auto">
+            <Nav.Item as="li">
+              <Link to="/about" className="nav-link" activeClassName="active">About</Link>
+            </Nav.Item>
+            <Nav.Item as="li">
+              <Link to="/index" className="nav-link" activeClassName="active">Home</Link>
+            </Nav.Item>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    
+    </Container>
+    <Container>
+      {children}
+    </Container>
+  
+  </header>
+ 
+ 
+ 
+ 
+
+
+  )
+  
+  }
 export default Layout
