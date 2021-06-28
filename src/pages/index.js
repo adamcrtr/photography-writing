@@ -16,6 +16,7 @@ import { Button,
 
 
 } from 'react-bootstrap';
+import LightboxExample from '../components/LightboxExample';
 
 // Step 2: Define your component
 const IndexPage = () => {
@@ -37,9 +38,9 @@ const IndexPage = () => {
        
           </Col>
           <Col>
-      <StaticImage
+      <StaticImage 
         alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
-        src="../images/image.jpg"
+        src="https://ik.imagekit.io/ybi4dztm50ub/image_ohO-CkdmB.jpg"
       />
        
           </Col>
@@ -50,10 +51,12 @@ const IndexPage = () => {
       />
        
           </Col>
-          
+
           
          </Row>
+<LightboxExample>
 
+</LightboxExample>
       </Container>
      </Layout>
   )
