@@ -30,21 +30,21 @@ const IndexPage = () => {
       <p>I'm making this by following the Gatsby Tutorial.</p>
       <Container>
         <Row>
-          <Col>
+          <Col sm md>
       <StaticImage
         alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
         src="../images/image.jpg"
       />
        
           </Col>
-          <Col>
+          <Col sm md>
       <StaticImage 
         alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
         src="https://ik.imagekit.io/ybi4dztm50ub/image_ohO-CkdmB.jpg"
       />
        
           </Col>
-          <Col>
+          <Col sm md>
       <StaticImage
         alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
         src="../images/image.jpg"
